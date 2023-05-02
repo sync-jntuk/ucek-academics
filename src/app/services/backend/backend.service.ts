@@ -7,9 +7,10 @@ import { Injectable } from '@angular/core';
 })
 export class BackendService {
 
-	// _baseURL: string = 'http://ec2-54-235-5-143.compute-1.amazonaws.com:3000'
-	_baseURL: string = 'https://sore-puce-snail-wear.cyclic.app'
 	// _baseURL: string = 'http://127.0.0.1:3000'
+	// _baseURL: string = 'http://ec2-54-235-5-143.compute-1.amazonaws.com:3000'
+	// _baseURL: string = 'https://sore-puce-snail-wear.cyclic.app'
+	_baseURL: string = 'http://191.101.3.200:3000'
 	constructor(private httpClient: HttpClient) { }
 
 	get(url: string, params: any): Observable<any> {
